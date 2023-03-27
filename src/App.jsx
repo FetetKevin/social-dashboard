@@ -9,7 +9,13 @@ function App() {
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
+        // document.body.style.backgroundColor = "green";
     };
+
+    darkMode
+        ? (document.body.style.backgroundColor = "#1d2029")
+        : (document.body.style.backgroundColor = "#fff");
+
     return (
         <div className={darkMode ? "global" : "global light"}>
             <div className="container">

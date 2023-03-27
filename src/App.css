@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 :root {
-    --bg-color-dark : #1d2029;
+    --bg-color-dark: #1d2029;
     --box-bg-color-dark: #252b43;
     --box-bg-hover-dark: #363d5c;
-    --text-color-dark : #fff;
+    --text-color-dark: #fff;
 
-    --bg-color-light : #fff;
+    --bg-color-light: #fff;
     --box-bg-color-light: #fff;
     --box-bg-hover-light: #dfdfdf;
-    --text-color-light : #252b43;
+    --text-color-light: #252b43;
 }
 * {
     margin: 0;
@@ -21,18 +21,18 @@ html {
     font-size: 62.5%;
 }
 
-.global {
-    height: 100vh;
-    width: 100vw;
+body {
+    background-color: var(--bg-color-dark);
+}
+
+body {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color-dark);
     font-family: "Inter", sans-serif;
-}
-
-.global.light {
-    background-color: var(--bg-color-light);
 }
 
 .container {
@@ -102,7 +102,7 @@ header .circle {
     border: 2px solid #96e4b9;
 }
 
-header .circle.light{
+header .circle.light {
     background-color: var(--bg-color-light);
 }
 
@@ -338,8 +338,8 @@ main .top {
 }
 
 @media all and (max-width: 450px) {
-    .container { 
-        width: 380px;  
+    .container {
+        width: 380px;
     }
     main .top {
         grid-template-columns: repeat(1, 1fr);
@@ -358,8 +358,8 @@ main .top {
 }
 
 @media all and (max-width: 360px) {
-    .container { 
-        width: 320px;  
+    .container {
+        width: 320px;
     }
     .bottom .overview {
         width: 320px;
