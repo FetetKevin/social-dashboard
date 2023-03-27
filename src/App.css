@@ -356,3 +356,12 @@ main .top {
         gap: 20px;
     }
 }
+
+@media all and (max-width: 360px) {
+    .container { 
+        width: 320px;  
+    }
+    .bottom .overview {
+        width: 320px;
+    }
+}
